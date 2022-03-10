@@ -1,0 +1,83 @@
+{
+  "name": "new userbot",
+  "description": "سورس جمثون الجديد",
+  "logo": "",
+   "keywords": [
+  "telegram", 
+  "userbot", 
+  "jmthon",
+  "plugable"
+ ],
+ "repository": "https://github.com/Jmiqq/pack",
+  "website": "https://github.com/Jmiqq",
+  "env": {
+   "ENV": {
+    "description": "لا تغيرها نهائيا .",
+    "value": "ANYTHING"
+  },
+  "API_ID": {
+    "description": "هـنا ضع الايبي ايدي احصل عليه من  :  my.telegram.org",
+    "value": "",
+    "required": true
+  },
+  "API_HASH": {
+    "description": "هـنا ضع ايبي هاش احصل عليه من  :  my.telegram.org",
+    "value": "",
+    "required": true
+  },
+  "STRING_SESSION": {
+    "description": "هنا ضع كود تيرمكس  ( سيشن تيليثون  )",
+    "value": "",
+    "required": true
+  },
+  "TG_BOT_TOKEN": {
+    "description": "هنا ضع توكن بوتك احصل عليه من @Botfather ",
+    "value": ""
+  },
+  "TG_BOT_USERNAME": {
+    "description": "هنا ضع معرف بوتك بدون @ احصل عليه من @Botfather ",
+    "value": ""
+  },
+  "HEROKU_API_KEY": {
+    "description": "هنا ضع ايبي كي هيروكو",
+    "value": ""
+  },
+  "HEROKU_APP_NAME": {
+    "description": "اسم التطبيق الذي وضعته في الاعلى اول شيء",
+    "value": ""
+  },
+  "COMMAND_HAND_LER": {
+    "description": "يفضل عدم تغييرها ان كنت مبتدأ",
+    "value": ".",
+    "required": false
+  },
+  "DEFAULT_BIO": {
+    "description": "النبذة الخاصه بحسابك على التلي",
+    "value": "",
+    "required": false
+  },
+  "UPSTREAM_REPO": {
+    "description": "رمز السورس لا تغيره ابدا",
+    "value": "",
+    "required": true 
+  },
+  "TZ": {
+    "description": "هنـا ضع المنطقه الزمنية الخاص بك  احصل عليه من  http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+    "value": "Asia/Baghdad",
+    "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "heroku/python"
+  },
+  {
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }]
+}
+ 
