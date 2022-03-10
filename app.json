@@ -15,7 +15,7 @@
     "description": "لا تغيرها نهائيا .",
     "value": "ANYTHING"
   },
-  "API_ID": {
+  "APP_ID": {
     "description": "هـنا ضع الايبي ايدي احصل عليه من  :  my.telegram.org",
     "value": "",
     "required": true
